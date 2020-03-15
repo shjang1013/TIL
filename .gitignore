@@ -1,0 +1,15 @@
+# MacOS
+.DS_Store
+
+# Node
+logs/
+
+*.log
+
+.idea/
+
+yarn.lock
+
+node_modules/
+
+.vuepress/dist
