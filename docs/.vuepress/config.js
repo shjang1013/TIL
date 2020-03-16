@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Today Sohyeon Learned',
   description: 'Personal Wiki (Today I Learned)',
-  email: 'shjang113@gmail.com",
+  email: 'shjang113@gmail.com',
   base: "/TIL/",
   head: [
     ['link', { rel: 'icon', href: '/images/logo-144.png' }],
