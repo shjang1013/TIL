@@ -26,44 +26,52 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    "url": "404.html",
-    "revision": "2962f3e408148e10ef98d61809e3cc5e"
-  },
-  {
-    "url": "assets/css/0.styles.750e488e.css",
-    "revision": "a7c1043598a724ee4d68d8a761e0083f"
+    "url": "assets/css/0.styles.78cb52a9.css",
+    "revision": "c167dc745335c86dc9ead1ec93f346f1"
   },
   {
     "url": "assets/img/search.83621669.svg",
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/2.ef315f58.js",
-    "revision": "1b66b51814c757198972593cd10e9946"
+    "url": "assets/js/2.84b2babc.js",
+    "revision": "ba1b07fb0a48066d9603efd1f0b1fd44"
   },
   {
-    "url": "assets/js/3.04e2f9e1.js",
-    "revision": "7047924b41c72c4866289a9376e29736"
+    "url": "assets/js/3.74c6d32a.js",
+    "revision": "95d7992184d2eb02ce766db00ac32da8"
   },
   {
-    "url": "assets/js/4.4a14eea8.js",
-    "revision": "9821000b7ce9f712633ecd7a73edbd1c"
+    "url": "assets/js/4.a6c8e5ef.js",
+    "revision": "e7cb2d093ded65cce3db05e26bead737"
   },
   {
-    "url": "assets/js/5.1c0b530d.js",
-    "revision": "25ff13ffc5c1c59502d0dcb3b27c98d8"
+    "url": "assets/js/5.7506284c.js",
+    "revision": "6fd911b0f45e648a28d35f0e5cdea6d5"
   },
   {
-    "url": "assets/js/6.11a575c2.js",
-    "revision": "d1470f23051d3f13eb3896b5196f0161"
+    "url": "assets/js/6.35e9f53c.js",
+    "revision": "1f30f6aea04300fab95f2c66e3e92e2e"
   },
   {
-    "url": "assets/js/7.0342f71e.js",
-    "revision": "0dd59ccf0336d5aff13be4bdc6b1aa63"
+    "url": "assets/js/7.c7bcfa76.js",
+    "revision": "8c4b93ade7fb09865fe3018487536a32"
   },
   {
-    "url": "assets/js/app.54f401f5.js",
-    "revision": "68bc24be27440e3cab88c5d8e2d3b647"
+    "url": "assets/js/8.bacf05a4.js",
+    "revision": "97663adb68a0052a862f3bbdeb4a510a"
+  },
+  {
+    "url": "assets/js/9.8747911a.js",
+    "revision": "d2930f01d8fca25c9ba2fa68172242eb"
+  },
+  {
+    "url": "assets/js/app.8a3d4569.js",
+    "revision": "aa2ba9190f551a2448e4239a1fb3a862"
+  },
+  {
+    "url": "goals/2020.html",
+    "revision": "b2bd896c7dfc9b4430e31afca0b0be8c"
   },
   {
     "url": "images/logo-144.png",
@@ -71,7 +79,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f695278bccf2430f00fa382225cc30d7"
+    "revision": "f001916f626360168801188839811671"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
