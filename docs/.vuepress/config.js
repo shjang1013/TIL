@@ -1,3 +1,5 @@
+const sidebar = require('./auto-sidebar-generator');
+
 module.exports = {
   title: 'Today Sohyeon Learned',
   description: 'Personal Wiki (Today I Learned)',
