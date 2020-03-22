@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Queue | Today Sohyeon Learned</title>
+    <meta name="description" content="Personal Wiki (Today I Learned)">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/TIL/images/logo-144.png">
+  <link rel="manifest" href="/TIL/manifest.json">
+    
+    <link rel="preload" href="/TIL/assets/css/0.styles.78cb52a9.css" as="style"><link rel="preload" href="/TIL/assets/js/app.1ee8afbd.js" as="script"><link rel="preload" href="/TIL/assets/js/2.19dc00e2.js" as="script"><link rel="preload" href="/TIL/assets/js/10.d279f9c8.js" as="script"><link rel="preload" href="/TIL/assets/js/3.3c74e254.js" as="script"><link rel="prefetch" href="/TIL/assets/js/11.0e127a5e.js"><link rel="prefetch" href="/TIL/assets/js/12.ee886b09.js"><link rel="prefetch" href="/TIL/assets/js/13.47df2a4e.js"><link rel="prefetch" href="/TIL/assets/js/14.7ccec768.js"><link rel="prefetch" href="/TIL/assets/js/15.3e8da6a1.js"><link rel="prefetch" href="/TIL/assets/js/16.aaf390ab.js"><link rel="prefetch" href="/TIL/assets/js/17.4c350f4c.js"><link rel="prefetch" href="/TIL/assets/js/4.b2a0a3f5.js"><link rel="prefetch" href="/TIL/assets/js/5.7506284c.js"><link rel="prefetch" href="/TIL/assets/js/6.35e9f53c.js"><link rel="prefetch" href="/TIL/assets/js/7.e778251c.js"><link rel="prefetch" href="/TIL/assets/js/8.ec86abd8.js"><link rel="prefetch" href="/TIL/assets/js/9.834e8005.js">
+    <link rel="stylesheet" href="/TIL/assets/css/0.styles.78cb52a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/TIL/" class="home-link router-link-active"><!----> <span class="site-name">Today Sohyeon Learned</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/shjang1013/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/shjang1013/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🎯 목표</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>📒 SWEA</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/TIL/SWEA/Linked List.html" class="sidebar-link">Linked List</a></li><li><a href="/TIL/SWEA/List1.html" class="sidebar-link">List1</a></li><li><a href="/TIL/SWEA/List2.html" class="sidebar-link">List2</a></li><li><a href="/TIL/SWEA/Queue.html" class="active sidebar-link">Queue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/TIL/SWEA/Queue.html#목차" class="sidebar-link">목차</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/Queue.html#_1-queue-자료-구조의-개념-2" class="sidebar-link">1. Queue 자료 구조의 개념</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/Queue.html#_2-queue의-종류-2" class="sidebar-link">2. Queue의 종류</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/Queue.html#_3-queue의-활용-2" class="sidebar-link">3. Queue의 활용</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/Queue.html#_4-bfs-너비-우선-탐색-2" class="sidebar-link">4. BFS(너비 우선 탐색)</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/Queue.html#reference-additional-resources" class="sidebar-link">Reference &amp; Additional Resources</a></li></ul></li><li><a href="/TIL/SWEA/Stack1.html" class="sidebar-link">Stack1</a></li><li><a href="/TIL/SWEA/Stack2.html" class="sidebar-link">Stack2</a></li><li><a href="/TIL/SWEA/String.html" class="sidebar-link">String</a></li><li><a href="/TIL/SWEA/Tree.html" class="sidebar-link">Tree</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="queue"><a href="#queue" class="header-anchor">#</a> Queue</h1> <p><em>written by sohyeon</em>🍀</p> <br> <h2 id="목차"><a href="#목차" class="header-anchor">#</a> 목차</h2> <h3 id="_1-queue-자료-구조의-개념"><a href="#_1-queue-자료-구조의-개념" class="header-anchor">#</a> <a href="#1-Queue-%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0%EC%9D%98-%EA%B0%9C%EB%85%90-1">1. Queue 자료 구조의 개념</a></h3> <h3 id="_2-queue의-종류"><a href="#_2-queue의-종류" class="header-anchor">#</a> <a href="#2-Queue%EC%9D%98-%EC%A2%85%EB%A5%98-1">2. Queue의 종류</a></h3> <h3 id="_3-queue의-활용"><a href="#_3-queue의-활용" class="header-anchor">#</a> <a href="#3-Queue%EC%9D%98-%ED%99%9C%EC%9A%A9-1">3. Queue의 활용</a></h3> <h3 id="_4-bfs-너비-우선-탐색"><a href="#_4-bfs-너비-우선-탐색" class="header-anchor">#</a> <a href="#4-BFS(%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89)-1">4. BFS(너비 우선 탐색)</a></h3> <br> <h2 id="_1-queue-자료-구조의-개념-2"><a href="#_1-queue-자료-구조의-개념-2" class="header-anchor">#</a> 1. Queue 자료 구조의 개념</h2> <h3 id="queue의-특성"><a href="#queue의-특성" class="header-anchor">#</a> Queue의 특성</h3> <ol><li>삽입, 삭제의 위치가 제한적인 자료구조</li></ol> <ul><li>큐 뒤: 삽입 / 큐 앞: 삭제</li></ul> <ol start="2"><li>선입선출구조(FIFO: First In First Out)</li></ol> <ul><li>큐에 삽입한 순서대로 원소가 저장</li> <li>가장 먼저 삽입(First In)된 원소는 가장 먼저 삭제(First Out)됨</li></ul> <ol start="3"><li>큐의 예: 서비스 대기 행렬</li></ol> <h3 id="queue의-구조-선입-선출-구조"><a href="#queue의-구조-선입-선출-구조" class="header-anchor">#</a> Queue의 구조(선입 선출 구조)</h3> <div class="language- extra-class"><pre class="language-text"><code>-----------------------------
+삭제 &lt;=                     =&gt; 삽입
+-----------------------------
+머리(Front): 저장된 원소 중 첫 번째 원소
+꼬리(Rear): 저장된 원소 중 마지막 번째 원소
+
+기본 연산은 삽입(enQueue)과 삭제(deQueue)가 있다. 
+</code></pre></div><h3 id="queue의-주요-연산"><a href="#queue의-주요-연산" class="header-anchor">#</a> Queue의 주요 연산</h3> <table><thead><tr><th style="text-align:center;">연산</th> <th style="text-align:center;">기능</th></tr></thead> <tbody><tr><td style="text-align:center;">enQueue(item)</td> <td style="text-align:center;">큐의 뒤쪽(rear 다음)에 원소를 삽입하는 연산</td></tr> <tr><td style="text-align:center;">deQueue()</td> <td style="text-align:center;">큐의 앞쪽(front)에서 원소를 삭제하고 반환하는 연산</td></tr> <tr><td style="text-align:center;">createQueue()</td> <td style="text-align:center;">공백 상태의 큐를 생성하는 연산</td></tr> <tr><td style="text-align:center;">isEmpty()</td> <td style="text-align:center;">큐가 공백 상태인지를 확인하는 연산</td></tr> <tr><td style="text-align:center;">isFull()</td> <td style="text-align:center;">큐가 포화 상태인지를 확인하는 연산</td></tr> <tr><td style="text-align:center;">Qpeek()</td> <td style="text-align:center;">큐의 앞쪽(front)에서 원소를 삭제 없이 반환하는 연산</td></tr></tbody></table> <h3 id="queue의-연산-과정"><a href="#queue의-연산-과정" class="header-anchor">#</a> Queue의 연산 과정</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 공백 큐 생성: createQueue();
+0     1     2     3
+----------------------------
+
+----------------------------
+front = rear = -1
+
+2. 원소 A 삽입: enQueue(A);
+0     1     2     3
+----------------------------
+A
+----------------------------
+front = -1, rear = 0
+
+3. 원소 B 삽입: enQueue(B);
+0     1     2     3
+----------------------------
+A     B
+----------------------------
+front = -1, rear = 1
+
+4. 원소 반환/삭제: deQueue();
+0     1     2     3
+----------------------------
+B
+----------------------------
+front = 0, rear = 1
+
+5. 원소 C 삽입: enQueue(C);
+0     1     2     3
+----------------------------
+B     C
+----------------------------
+front = 0, rear = 2
+
+6. 원소 반환/삭제: deQueue();
+0     1     2     3
+----------------------------
+C
+----------------------------
+front = 1, rear = 2
+
+7. 원소 반환/삭제: deQueue();
+0     1     2     3
+----------------------------
+
+----------------------------
+front = 2, rear = 2
+</code></pre></div><h3 id="queue의-종류"><a href="#queue의-종류" class="header-anchor">#</a> Queue의 종류</h3> <ul><li>선형 큐
+<ul><li>간단하고 기본적인 형태</li> <li><code>리스트 사용</code></li></ul></li> <li>원형 큐
+<ul><li>선형에서 발전된 형태</li> <li><code>리스트 사용</code></li></ul></li> <li>연결 큐
+<ul><li><code>연결 리스트 형식을 이용</code></li></ul></li> <li>우선순위 큐
+<ul><li>연결 큐를 응용한 큐의 형태</li></ul></li></ul> <br> <h2 id="_2-queue의-종류-2"><a href="#_2-queue의-종류-2" class="header-anchor">#</a> 2. Queue의 종류</h2> <h3 id="선형-queue의-특징"><a href="#선형-queue의-특징" class="header-anchor">#</a> 선형 Queue의 특징</h3> <ol><li>1차원 리스트를 이용한 큐</li></ol> <ul><li>큐의 크기 = 리스트의 크기</li> <li>front: 저장된 첫 번째 원소의 인덱스</li> <li>rear: 저장된 마지막 원소의 인덱스</li></ul> <ol start="2"><li>상태 표현</li></ol> <ul><li>초기 상태: front = rear = -1</li> <li>공백 상태: front = rear</li> <li>포화 상태: rear = n-1(n: 리스트의 크기, n-1: 리스트의 마지막 인덱스)</li></ul> <h3 id="선형-queue의-구현"><a href="#선형-queue의-구현" class="header-anchor">#</a> 선형 Queue의 구현</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 초기 createQueue()
+초기 공백 큐 생성
+    - 크기 n인 1차원 리스트 생성
+    - front, rear = -1로 초기화
+
+2. enQueue(item)
+삽입: enQueue(item)
+마지막 원소 뒤에 새로운 원소를 삽입하기 위해
+    1. rear 값을 하나 증가시켜 새로운 원소를 삽입할 자리를 마련함
+    2. 그 인덱스에 해당하는 리스트 원소 Q[rear]에 item을 저장
+
+ex) 선형 큐 삽입 예제
+def enQueue(item):
+    global rear
+    if isFull() : 
+        print(&quot;Queue_Full&quot;)
+    else:
+        rear +=1
+        Q[rear] = item
+
+3. deQueue()
+삭제: deQueue()
+가장 앞에 있는 원소를 삭제하기 위해
+    1. front 값을 하나 증가시켜 큐에 남아있는 첫 번째 원소로 이동함
+    2. 새로운 첫 번째 원소를 리턴함으로써 삭제와 동일한 기능을 함    
+
+ex) 선형 큐 삭제 예제
+def deQueue():
+    global front
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+    else:
+        front += 1
+        return Q[front]
+
+4. isEmpty(), isFull()
+공백상태 및 포화상태 검사: isEmpty(), isFull()
+    - 공백상태: front = rear
+    - 포화상태: rear = n-1(n: 리스트의 크기, n-1: 리스트의 마지막 인덱스)
+
+ex) 선형 큐 공백상태 및 포화상태 검사 예제
+def isEmpty()
+    return front == rear
+
+def isFull():
+    return rear == len(Q)-1
+
+5. Qpeek()
+검색: Qpeek()
+    - 가장 앞에 있는 원소를 검색하여 반환하는 연산
+    - 현재 front의 한자리 뒤(front+1)에 있는 원소, 즉 큐의 첫 번째에 있는 원소를 반환
+
+ex) 선형 큐 검색 예제
+def Qpeek():
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+    else:
+        return Q[front+1]
+</code></pre></div><h3 id="선형-queue의-문제점-잘못된-포화-상태-인식"><a href="#선형-queue의-문제점-잘못된-포화-상태-인식" class="header-anchor">#</a> 선형 Queue의 문제점 : 잘못된 포화 상태 인식</h3> <ul><li>리스트의 크기를 고정 =&gt; 사용할 큐의 크기만큼을 미리 확보 =&gt; 메모리의 낭비 발생
+<ul><li>삽입, 삭제를 계속할 경우 리스트의 앞부분에 활용할 수 있는 공간이 있음에도, rear=n-1인 상태 즉, <code>포화 상태로 인식</code></li> <li>더 이상의 삽입을 수행할 수 없음</li></ul></li></ul> <h3 id="선형-queue의-장-단점"><a href="#선형-queue의-장-단점" class="header-anchor">#</a> 선형 Queue의 장, 단점</h3> <ul><li>장점 : 삽입, 삭제의 처리 속도 빠름</li> <li>단점 : 메모리 낭비가 심함</li></ul> <h3 id="선형-큐의-단점-해결-방법"><a href="#선형-큐의-단점-해결-방법" class="header-anchor">#</a> 선형 큐의 단점 해결 방법</h3> <ul><li><code>원형 큐 사용</code>으로 메모리 절약</li> <li>파이썬의 리스트 특성을 사용한 큐 사용으로 메모리 절약
+<ul><li>단점 : 삽입, 삭제 시 복사, 데이터 이동시키는 연산 수행에 많은 시간 소모</li></ul></li> <li><code>단순 연결 리스트</code>로 구현한 큐 사용으로 메모리 동적 확보</li> <li>큐 라이브러리 사용</li></ul> <h3 id="원형-queue"><a href="#원형-queue" class="header-anchor">#</a> 원형 Queue</h3> <ul><li>1차원 리스트를 사용하되, 논리적으로 리스트의 처음과 끝이 연결되어 원형 형태의 큐를 이룬다고 가정하고 사용함</li> <li>원형 큐의 논리적 구조</li></ul> <h3 id="원형-queue의-특징"><a href="#원형-queue의-특징" class="header-anchor">#</a> 원형 Queue의 특징</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 초기 공백 상태
+- front = rear = 0
+
+2. Index의 순환
+- front와 rear의 위치가 리스트의 마지막 인덱스인 n-1를 가리킨 후, 논리적 순환을 이루어 리스트의 처음
+인덱스인 0으로 이동해야 함
+- 이를 위해 나머지 연산자 %를 사용
+
+3. front 변수
+- 공백 상태와 포화 상태 구분을 쉽게 하기 위해 front가 있는 자리는 사용하지 않고 항상 빈자리로 둠
+
+4. 삽입 위치 및 삭제 위치
+-------------------------------------------------
+ 테이블 인덱스 |     삽입 위치     |      삭제 위치 
+-------------------------------------------------
+   선형 큐   |   rear=rear+1   |   front=front+1
+-------------------------------------------------
+   원형 큐   | rear=(rear+1)%n | front=(front+1)%n
+-------------------------------------------------
+</code></pre></div><h3 id="원형-queue의-구현"><a href="#원형-queue의-구현" class="header-anchor">#</a> 원형 Queue의 구현</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 초기 createQueue()
+초기 공백 큐 생성
+    - 크기 n인 1차원 리스트 생성
+    - front, rear = 0으로 초기화
+
+2. isEmpty(), isFull()
+공백상태 및 포화상태 검사: isEmpty(), isFull()
+    - 공백상태: front = rear
+    - 포화상태: 삽입할 rear의 다음 위치 = 현재 front
+    - (rear+1)%n = front
+
+ex) 원형 큐 공백상태 및 포화상태 검사 예제
+def isEmpty():
+    return front == rear
+
+def isFull():
+    return (rear+1)%len(cQ) == front
+
+3. enQueue(item)
+삽입: enQueue(item)
+마지막 원소 뒤에 새로운 원소를 삽입하기 위해
+    - rear 값을 조정하여 새로운 원소를 삽입할 자리를 마련함: rear &lt;- (rear+1) % n;
+    - 인덱스에 해당하는 리스트원소 cQ[rear]에 item을 저장
+
+ex) 원형 큐 삽입 예제
+def enQueue(item):
+    global rear
+    if isFull():
+        print(&quot;Queue_Full&quot;)
+    else:
+        rear = (rear + 1) % len(cQ)
+        cQ[rear] = item
+
+4. deQueue()
+삭제: deQueue(), delete()
+가장 앞에 있는 원소를 삭제하기 위해
+    - front 값을 조정하여 삭제할 자리를 준비함
+    - 새로운 front 원소를 리턴함으로써 삭제와 동일한 기능을 함
+
+ex) 원형 큐 삭제 예제
+def deQueue():
+    global front
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+    else:
+        front = (front + 1) % len(cQ)
+        return cQ[front]
+
+def delete():
+    global front
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+    else:
+        front = (front + 1) % len(CQ)
+</code></pre></div><h3 id="리스트의-특성을-사용한-queue"><a href="#리스트의-특성을-사용한-queue" class="header-anchor">#</a> 리스트의 특성을 사용한 Queue</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 라이썬의 리스트 특성을 사용한 큐
+    - 리스트는 크기를 동적으로 변경할 수 있음
+    - 메모리 절약
+    - 삽입, 삭제 시 복사, 데이터를 이동시키는 연산을 수행하는데 많은 시간 소모
+
+2. 리스트의 메서드
+------------------------------------
+    메서드     |         설명
+------------------------------------
+append(item) | 마지막 위치에 원소 추가
+------------------------------------
+pop(index)   | index 위치에 원소 삭제
+------------------------------------
+
+3. front는 리스트의 맨 앞: -1
+
+4. rear는 리스트의 맨 뒤: len(queue)-1
+</code></pre></div><h4 id="파이썬으로-구현한-원형-큐의-삽입-및-삭제-함수-예제"><a href="#파이썬으로-구현한-원형-큐의-삽입-및-삭제-함수-예제" class="header-anchor">#</a> 파이썬으로 구현한 원형 큐의 삽입 및 삭제 함수 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>def enQueue(item):
+    queue.append(item)
+
+def deQueue():
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+    else:
+        return queue.pop(0)
+
+def isEmpty():
+    return len(queue)==0
+
+def Qpeek():
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+    else:
+        return queue[0]
+
+queue = [] # 공백 리스트 생성
+# front : -1
+# rear : len(queue)-1
+
+enQueue('A')
+enQueue('B')
+enQueue('C')
+print(deQueue())
+print(deQueue())
+print(deQueue())
+</code></pre></div><h3 id="연결-queue의-특징"><a href="#연결-queue의-특징" class="header-anchor">#</a> 연결 Queue의 특징</h3> <ol><li>단순 연결 리스트(Linked List)를 이용한 큐</li></ol> <ul><li>큐의 원소: 단순 연결 리스트의 노드</li> <li>큐의 원소 순서: 노드의 연결 순서, 링크로 연결되어 있음</li> <li>front: 첫 번째 노드를 가리키는 링크</li> <li>rear: 마지막 노드를 가리키는 링크</li></ul> <ol start="2"><li>상태 표현</li></ol> <ul><li>초기 상태: front = rear = None</li> <li>공백 상태: front = rear = None</li> <li>노드를 계속 추가할 수 있는 연결 리스트 특성으로 연결 큐에는 포화상태가 없음</li></ul> <p>연결 Queue의 구현</p> <div class="language- extra-class"><pre class="language-text"><code>1. createLinkedQueue()
+초기 공백 큐 생성: createLinkedQueue()
+    - 리스트 노드 없이 포인터 변수만 생성함
+    - front와 rear를 None로 초기화
+
+ex) 연결 큐의 초기 공백 큐 생성 예제
+front = None
+rear = None
+
+2. isEmpty()
+공백상태 검사: isEmpty()
+    - 공백상태: front = rear = None
+
+ex) 연결 큐의 공백상태 검사 예제
+def isEmpty():
+    return front == None
+
+3. enQueue(item)
+삽입: enQueue(item)
+    1. 새로운 노드 생성 후 데이터 필드에 item 저장
+    2. 연결 큐가 공백인 경우, 아닌 경우에 따라 front, rear 변수 지정
+
+ex) 연결 큐의 삽입 예제
+def enQueue(item):       # 연결 큐의 삽입 연산
+    global front, rear
+    newNode = Node(item)   # 새로운 노드 생성
+    if isEmpty():          # 큐가 비어있다면
+        front = newNode
+    else:
+        rear.next = newNode
+    rear = newNode
+
+4. deQueue()
+삭제: deQueue()
+    1. old가 지울 노드를 가리키게 하고, front 재설정
+    2. 삭제 후 공백 큐가 되는 경우, rear도 None로 설정
+    3. old가 가리키는 노드를 삭제하고 메모리 반환
+
+ex) 연결 큐의 삭제 예제
+def deQueue():   # 연결 큐의 삭제 연산
+    global front, rear
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+
+    item = front.item
+    front = front.next
+    if isEmpty():
+        rear = None
+    return item
+</code></pre></div><h4 id="파이썬으로-구현한-연결-queue-예제"><a href="#파이썬으로-구현한-연결-queue-예제" class="header-anchor">#</a> 파이썬으로 구현한 연결 Queue 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>class Node:
+    def __init__(self, item, n=None):
+        self.item = item
+        self.next = n
+
+def enQueue(item):       # 연결 큐의 삽입 연산
+    global front, rear
+    newNode = Node(item)   # 새로운 노드 생성
+    if front == None:      # 큐가 비어있다면
+        front = newNode
+    else:
+        rear.next = newNode
+    rear = newNode
+
+def isEmpty():
+    return front == None
+
+def deQueue():   # 연결 큐의 삭제 연산
+    global front, rear
+    if isEmpty():
+        print(&quot;Queue_Empty&quot;)
+
+    item = front.item
+    front = front.next
+    if isEmpty():
+        rear = None
+    return item
+    
+def Qpeek():
+    return front.item
+
+def printQ():
+    f = front
+    s = &quot;&quot;
+    while f:
+        s += f.item + &quot; &quot;
+        f = f.next
+    return s
+
+front = None
+rear = None
+
+enQueue('A')
+enQueue('B')
+enQueue('C')
+printQ()
+print(deQueue())
+print(deQueue())
+print(deQueue())
+</code></pre></div><h3 id="큐-라이브러리-큐-모듈"><a href="#큐-라이브러리-큐-모듈" class="header-anchor">#</a> 큐 라이브러리(큐 모듈)</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 큐 모듈에 정의된 클래스
+------------------------------------------------------------------------------------
+클래스                         |  내용
+------------------------------------------------------------------------------------
+queue.Queue(maxsize)         | 마지막 위치에 원소 추가
+------------------------------------------------------------------------------------
+queue.LifoQueue(maxsize)     | index 위치에 원소 삭제
+------------------------------------------------------------------------------------
+queue.PriorityQueue(maxsize) | 우선순위 큐 객체를 생성, 입력되는 아이템의 형식은 (순위, 아이템)의
+| 튜플로 입력되며, 우선순위는 숫자가 작을수록 높은 순위를 가짐
+------------------------------------------------------------------------------------
+
+2. maxsize는 최대 아이템수, 지정하지 않거나 음수이면 내용만큼 늘어남 
+
+3. 제시된 3개의 클래스는 다음과 같은 메서드를 동일하게 가짐
+-----------------------------------------------------------------------
+메서드                         |  내용
+-----------------------------------------------------------------------
+qsize()                       | 큐 객체에 입력된 아이템의 개수를 반환
+-----------------------------------------------------------------------
+put(item[, block[, timeout]]) | 큐 객체에 아이템을 입력
+-----------------------------------------------------------------------
+get([block[, timeout]])       | 생성된 큐 객체 특성에 맞추어, 아이템 1개를 반환
+-----------------------------------------------------------------------
+empty()                       | 큐 객체가 비어있으면 True 리턴
+-----------------------------------------------------------------------
+full()                        | 큐 객체가 꽉차있으면 True 리턴
+-----------------------------------------------------------------------
+
+4. 클래스의 정렬방식에 따라 get 계열의 메서드 결과가 달라짐                       
+</code></pre></div><h4 id="큐-모듈-활용-예제"><a href="#큐-모듈-활용-예제" class="header-anchor">#</a> 큐 모듈 활용 예제</h4> <div class="language- extra-class"><pre class="language-text"><code># 선입선출의 큐 개념을 구현한 큐 클래스 활용
+import queue
+
+q = queue.Queue()   # FIFO 구조 큐 생성
+q.put('A')
+q.put('B')
+q.put('C')
+
+while not q.empty():
+    print(q.get())
+</code></pre></div><br> <h2 id="_3-queue의-활용-2"><a href="#_3-queue의-활용-2" class="header-anchor">#</a> 3. Queue의 활용</h2> <h3 id="우선순위-queue"><a href="#우선순위-queue" class="header-anchor">#</a> 우선순위 Queue</h3> <ul><li>우선순위를 가진 항목들을 저장하는 큐</li> <li>FIFO 순서가 아니라 <strong>우선순위가 높은 순서대로</strong> 먼저 나가게 됨</li> <li>우선순위 큐의 적용 분야는 <code>시뮬레이션 시스템</code>, <code>네트워크 트래픽 제어</code>, <code>운영체제의 태스크 스케줄링</code>이 있다.</li></ul> <h3 id="리스트를-이용한-우선순위-큐의-구현"><a href="#리스트를-이용한-우선순위-큐의-구현" class="header-anchor">#</a> 리스트를 이용한 우선순위 큐의 구현</h3> <ol><li>리스트를 이용하여 자료 저장</li> <li>원소를 삽입하는 과정에서 우선순위를 비교하여 적절한 위치에 삽입하는 구조</li> <li>가장 앞에 최고 우선순위의 원소가 위치하게 됨</li></ol> <h4 id="우선순위-큐의-문제점"><a href="#우선순위-큐의-문제점" class="header-anchor">#</a> 우선순위 큐의 문제점</h4> <ul><li>리스트를 사용하므로, 삽입이나 삭제 연산이 일어날 때 원소의 재배치가 발생</li> <li>소요되는 시간이 많이 걸림</li></ul> <h4 id="우선순위-큐의-solution-해결책"><a href="#우선순위-큐의-solution-해결책" class="header-anchor">#</a> 우선순위 큐의 Solution(해결책)</h4> <ul><li>PriorityQueue(maxsize) 클래스 사용</li> <li>힙 자료구조 사용</li></ul> <h3 id="버퍼란"><a href="#버퍼란" class="header-anchor">#</a> 버퍼란?</h3> <ul><li>데이터를 한 곳에서 다른 한 곳으로 전송하는 동안 일시적으로 그 데이터를 보관하는 메모리의 영역</li> <li>버퍼링: 버퍼를 활용하는 방식 또는 버퍼를 채우는 동작을 의미</li></ul> <h3 id="버퍼의-자료-구조"><a href="#버퍼의-자료-구조" class="header-anchor">#</a> 버퍼의 자료 구조</h3> <ul><li>일반적으로 입출력 및 네트워크와 관련된 기능에서 이용</li> <li>순서대로 입력/출력/전달되어야 하므로 FIFO 방식의 자료구조인 <strong>큐가 활용</strong>됨</li></ul> <br> <h2 id="_4-bfs-너비-우선-탐색-2"><a href="#_4-bfs-너비-우선-탐색-2" class="header-anchor">#</a> 4. BFS(너비 우선 탐색)</h2> <h3 id="bfs-너비-우선-탐색"><a href="#bfs-너비-우선-탐색" class="header-anchor">#</a> BFS(너비 우선 탐색)</h3> <ul><li>BFS(Breadth First Search, 너비 우선 탐색)</li> <li><code>큐 활용</code></li> <li>시작점의 인접한 정점들을 모두 차례로  방문한 후 모두 차례로 방문한 후 방문했던 정점을 시작점으로 하여 다시 인접한 장점들을 차례로 방문하는 방식</li> <li>인접한 정점들을 탐색한 후, 차례로 너비 우선 탐색을 진행해야 하므로, 선입선출 형태의 자료구조인 큐 활용</li></ul> <h4 id="입력-파라미터-그래프-g와-탐색-시작점-v"><a href="#입력-파라미터-그래프-g와-탐색-시작점-v" class="header-anchor">#</a> 입력 파라미터: 그래프 G와 탐색 시작점 v</h4> <div class="language- extra-class"><pre class="language-text"><code>def BFS(G,v):            # 그래프 G, 탐색 시작점 v
+    visited = [0]*n        # n : 정점의 개수
+    queue = []             # 큐 생성
+    queue.append(v)        # 시작점 v를 큐에 삽입
+    while queue:           # 큐가 비어있지 않은 경우
+        t = queue.pop(0)     # 큐의 첫번째 원소 반환 
+        if not visited[t]:   # 방문되지 않은 곳이라면
+            visited[t] = True  # 방문한 것으로 표시
+            visit(t)
+        for i in G[t]:       # t와 연결된 모든 선에 대해
+            if not visited[i]: # 방문되지 않은 곳이라면
+                queue.append(i)  # 큐에 넣기
+</code></pre></div><br> <h2 id="reference-additional-resources"><a href="#reference-additional-resources" class="header-anchor">#</a> Reference &amp; Additional Resources</h2> <blockquote><p>SW Expert Academy</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/22/2020, 3:07:57 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/TIL/SWEA/List2.html" class="prev">
+        List2
+      </a></span> <span class="next"><a href="/TIL/SWEA/Stack1.html">
+        Stack1
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/TIL/assets/js/app.1ee8afbd.js" defer></script><script src="/TIL/assets/js/2.19dc00e2.js" defer></script><script src="/TIL/assets/js/10.d279f9c8.js" defer></script><script src="/TIL/assets/js/3.3c74e254.js" defer></script>
+  </body>
+</html>
