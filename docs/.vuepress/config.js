@@ -18,7 +18,7 @@ module.exports = {
   ],
   themeConfig: {
     sidebar: [
-      sidebar.getSidebarGroup('/goals/', '🎯 목표', true)
+      sidebar.getSidebarGroup('/goals/', '🎯 목표', true),
       sidebar.getSidebarGroup('/SWEA/', '📒 SWEA', true)
     ],
     nav: [
