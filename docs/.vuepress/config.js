@@ -19,6 +19,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       sidebar.getSidebarGroup('/goals/', '🎯 목표', true)
+      sidebar.getSidebarGroup('/SWEA/', '📒 SWEA', true)
     ],
     nav: [
       { text: 'GitHub', link: 'https://github.com/shjang1013/TIL' }
