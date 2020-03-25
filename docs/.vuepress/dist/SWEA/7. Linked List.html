@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linked List | Today Sohyeon Learned💡</title>
+    <meta name="description" content="Personal Wiki (Today I Learned)">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/TIL/images/logo-144.png">
+  <link rel="manifest" href="/TIL/manifest.json">
+    
+    <link rel="preload" href="/TIL/assets/css/0.styles.b1e872f3.css" as="style"><link rel="preload" href="/TIL/assets/js/app.6651a9c9.js" as="script"><link rel="preload" href="/TIL/assets/js/2.73ccfab7.js" as="script"><link rel="preload" href="/TIL/assets/js/15.4147562d.js" as="script"><link rel="preload" href="/TIL/assets/js/4.58ecc0e6.js" as="script"><link rel="prefetch" href="/TIL/assets/js/10.343cefc1.js"><link rel="prefetch" href="/TIL/assets/js/11.deb81709.js"><link rel="prefetch" href="/TIL/assets/js/12.1f13027a.js"><link rel="prefetch" href="/TIL/assets/js/13.95346731.js"><link rel="prefetch" href="/TIL/assets/js/14.5d675fae.js"><link rel="prefetch" href="/TIL/assets/js/16.3c477810.js"><link rel="prefetch" href="/TIL/assets/js/17.144d3a51.js"><link rel="prefetch" href="/TIL/assets/js/18.9c371c9c.js"><link rel="prefetch" href="/TIL/assets/js/19.78c0de15.js"><link rel="prefetch" href="/TIL/assets/js/3.043b2d53.js"><link rel="prefetch" href="/TIL/assets/js/5.6798762f.js"><link rel="prefetch" href="/TIL/assets/js/6.db9e3bfb.js"><link rel="prefetch" href="/TIL/assets/js/7.6e4a79f2.js"><link rel="prefetch" href="/TIL/assets/js/8.01fc74fe.js"><link rel="prefetch" href="/TIL/assets/js/9.3f1d58cc.js">
+    <link rel="stylesheet" href="/TIL/assets/css/0.styles.b1e872f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/TIL/" class="home-link router-link-active"><!----> <span class="site-name">Today Sohyeon Learned💡</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/shjang1013/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/shjang1013/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🎯 목표</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>📒 SWEA</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/TIL/SWEA/1. List1.html" class="sidebar-link">List1</a></li><li><a href="/TIL/SWEA/10. 완전 검색.html" class="sidebar-link">완전 검색</a></li><li><a href="/TIL/SWEA/2. List2.html" class="sidebar-link">List2</a></li><li><a href="/TIL/SWEA/3. String.html" class="sidebar-link">String</a></li><li><a href="/TIL/SWEA/4. Stack1.html" class="sidebar-link">Stack1</a></li><li><a href="/TIL/SWEA/5. Stack2.html" class="sidebar-link">Stack2</a></li><li><a href="/TIL/SWEA/6. Queue.html" class="sidebar-link">Queue</a></li><li><a href="/TIL/SWEA/7. Linked List.html" class="active sidebar-link">Linked List</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/TIL/SWEA/7. Linked List.html#_1-linked-list" class="sidebar-link">1. Linked List</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/7. Linked List.html#_2-삽입-정렬" class="sidebar-link">2. 삽입 정렬</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/7. Linked List.html#_3-병합-정렬" class="sidebar-link">3. 병합 정렬</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/7. Linked List.html#_4-linked-list의-활용" class="sidebar-link">4. Linked List의 활용</a></li><li class="sidebar-sub-header"><a href="/TIL/SWEA/7. Linked List.html#reference-additional-resources" class="sidebar-link">Reference &amp; Additional Resources</a></li></ul></li><li><a href="/TIL/SWEA/8. Tree.html" class="sidebar-link">Tree</a></li><li><a href="/TIL/SWEA/9. 시작하기.html" class="sidebar-link">시작하기</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linked-list"><a href="#linked-list" class="header-anchor">#</a> Linked List</h1> <p><em>written by sohyeon</em>🍀</p> <br> <h2 id="_1-linked-list"><a href="#_1-linked-list" class="header-anchor">#</a> 1. Linked List</h2> <h3 id="list"><a href="#list" class="header-anchor">#</a> List</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 순서를 가진 데이터의 묶음 - 같은 데이터의 중복 저장 가능
+2. 시퀀스 자료형 - 인덱싱, 슬라이싱, 연산자, 메서드 사용 가능
+3. 크기 제한 없음, 타입 제한 없음
+-----------------------------------------------
+      |    크기    |       데이터의 타입
+-----------------------------------------------
+ 배열  |  변경 불가  | 선언된 한가지 타입만 저장 가능
+-----------------------------------------------
+ 리스트 |  변경 가능  | 다양한 데이터 타입 저장 가능
+-----------------------------------------------
+</code></pre></div><ul><li>순차 리스트 : 배열을 기반으로 구현된 리스트</li> <li>연결 리스트 : 메모리의 동적 할당을 기반으로 구현된 리스트</li></ul> <h3 id="순차-list"><a href="#순차-list" class="header-anchor">#</a> 순차 List</h3> <ul><li><p>초기화 및 생성</p> <ul><li>변수에 값을 초기화하는 것으로 리스트 생성</li> <li>ex) L = [4, 9, 11, 23]</li></ul></li> <li><p>데이터 접근</p> <ul><li>리스트의 인덱스를 이용해 원하는 위치의 데이터를 변경하고 참조할 수 있음</li> <li>ex) 3에 위치한 자료 L[3] = 23, L[-1] = 23</li></ul></li> <li><p>리스트</p> <ul><li>동적 배열로 작성된 순차 리스트</li></ul></li> <li><p>자료의 삽입, 삭제 연산</p> <ul><li>원소의 이동 작업이 필요</li></ul></li></ul> <p>*원소의 개수가 많고 삽입/삭제 연산이 빈번한 작업
+- 소요되는 시간이 크게 증가</p> <h3 id="리스트-복사"><a href="#리스트-복사" class="header-anchor">#</a> 리스트 복사</h3> <table><thead><tr><th style="text-align:center;">코드</th> <th style="text-align:center;">설명</th></tr></thead> <tbody><tr><td style="text-align:center;">new_list = old_list</td> <td style="text-align:center;">주소의 복사, 얕은 복사</td></tr> <tr><td style="text-align:center;">new_list = old_list[:]</td> <td style="text-align:center;">슬라이싱, 깊은 복사</td></tr> <tr><td style="text-align:center;">new_list = []<br>new_list.extend(old_list)</td> <td style="text-align:center;">extend() : 리스트를 추가하는 함수, 깊은 함수</td></tr> <tr><td style="text-align:center;">new_list = list(old_list)</td> <td style="text-align:center;">list(), 깊은 복사</td></tr> <tr><td style="text-align:center;">import copy<br>new_list=copy.copy(old_list)</td> <td style="text-align:center;">copy 활용, 깊은 복사</td></tr> <tr><td style="text-align:center;">new_list = [i for i in old_list]</td> <td style="text-align:center;">리스트 함축, 깊은 복사</td></tr> <tr><td style="text-align:center;">import copy<br>new_list=copy.deepcopy(old_list)</td> <td style="text-align:center;">리스트 원소까지도 깊은 복사, 가장 느림</td></tr></tbody></table> <ul><li>아래로 내려갈수록 시간이 많이 걸림</li></ul> <h3 id="연결-list"><a href="#연결-list" class="header-anchor">#</a> 연결 List</h3> <ul><li>리스트의 단점을 보완한 자료 구조</li></ul> <div class="language- extra-class"><pre class="language-text"><code>1. 자료의 논리적인 순서와 메모리 상의 물리적인 순서가 일치하지 않고, 개별적으로 위치하고 있는 원소의 주소를 연결하여 하나의 전체적인 자료구조를 이룸
+2. 링크를 통해 원소에 접근하므로, 순차 리스트에서 물리적인 순서를 맞추기 위한 작업이 필요하지 않음
+3. 자료구조의 크기를 동적으로 조정할 수 있어, 메모리의 효율적인 사용이 가능
+4. 탐색 - 순차탐색
+</code></pre></div><h3 id="연결-리스트-사용을-위한-함수"><a href="#연결-리스트-사용을-위한-함수" class="header-anchor">#</a> 연결 리스트 사용을 위한 함수</h3> <table><thead><tr><th style="text-align:center;">함수명</th> <th style="text-align:center;">기능</th></tr></thead> <tbody><tr><td style="text-align:center;">addtoFirst()</td> <td style="text-align:center;">연결 리스트의 앞쪽에 원소를 추가하는 연산</td></tr> <tr><td style="text-align:center;">addtoLast()</td> <td style="text-align:center;">연결 리스트의 뒤쪽에 원소를 추가하는 연산</td></tr> <tr><td style="text-align:center;">add()</td> <td style="text-align:center;">연결 리스트의 특정 위치에 원소를 추가하는 연산</td></tr> <tr><td style="text-align:center;">delete()</td> <td style="text-align:center;">연결 리스트의 특정 위치에 있는 원소를 삭제하는 연산</td></tr> <tr><td style="text-align:center;">get()</td> <td style="text-align:center;">연결 리스트의 특정 위치에 있는 원소를 리턴하는 연산</td></tr></tbody></table> <h3 id="노드와-헤드"><a href="#노드와-헤드" class="header-anchor">#</a> 노드와 헤드</h3> <ul><li><p>노드</p> <ul><li>연결 리스트에서 하나의 원소에 필요한 데이터를 갖고 있는 자료단위</li> <li>데이터 필드: 원소의 값을 저장하는 자료구조</li> <li>링크 필드: 다음 노드의 주소를 저장하는 자료구조</li></ul></li> <li><p>헤드</p> <ul><li>리스트의 처음 노드를 가리키는 레퍼런스</li></ul></li></ul> <h3 id="단순-연결-리스트"><a href="#단순-연결-리스트" class="header-anchor">#</a> 단순 연결 리스트</h3> <ul><li>노드가 하나의 링크 필드에 의해 다음 노드와 연결되는 구조를 가짐</li> <li>헤드가 가장 앞의 노드를 가리키고, 각 노드의 링크 필드가 연속적으로 다음 노드를 가리킴</li> <li>최종적으로 None을 가리키는 노드가 리스트의 가장 마지막 노드임</li></ul> <h3 id="단순-연결-리스트의-삽입-연산"><a href="#단순-연결-리스트의-삽입-연산" class="header-anchor">#</a> 단순 연결 리스트의 삽입 연산</h3> <p><code>'A', 'C', 'D'를 원소로 갖고 있는 리스트의 두 번째에 'B'노드를 삽입할 때</code></p> <ol><li>메모리를 할당하여 새로운 노드 new 생성임</li> <li>새로운 노드 new의 데이터 필드에 'B' 저장</li> <li>삽입될 위치의 바로 앞에 위치한 노드의 링크 필드 필드를 new에 복사</li> <li>new의 주소를 앞 노드의 링크 필드에 저장</li></ol> <h4 id="단순-연결-리스트의-삽입-연산-예제"><a href="#단순-연결-리스트의-삽입-연산-예제" class="header-anchor">#</a> 단순 연결 리스트의 삽입 연산 예제</h4> <div class="language- extra-class"><pre class="language-text"><code># 첫 번째 노드로 삽입하는 알고리즘
+def addtoFirst(data):  # 첫 노드에 데이터 삽입
+    global Head
+    Head = Node(data, Head)  # 새로운 노드 생성
+
+# 가운데 노드로 삽입하는 알고리즘
+def add(pre, data):  # pre 다음에 데이터 삽입
+    if pre == None:
+        print('error')
+    else:
+        pre.link = Node(data, pre.link)
+
+# 마지막 노드로 삽입하는 알고리즘
+def addtoLast(data):  # 마지막에 데이터 삽입
+    global Head
+    if Head == None:    
+        Head = Node(data, None)
+    else:
+        p = Head
+        while p.link != None:  # 마지막 노드 찾을 때까지
+            p = p.link
+        p.link = Node(data, None)
+</code></pre></div><h3 id="단순-연결-리스트의-삭제-연산"><a href="#단순-연결-리스트의-삭제-연산" class="header-anchor">#</a> 단순 연결 리스트의 삭제 연산</h3> <p><code>'A', 'B', 'C', 'D' 리스트의 'B'노드를 삭제할 때</code></p> <ol><li>삭제할 노드의 앞 노드(선행노드) 탐색</li> <li>삭제할 노드의 링크 필드를 선행노드의 링크 필드에 복사</li></ol> <h4 id="단순-연결-리스트의-삭제-연산-예제"><a href="#단순-연결-리스트의-삭제-연산-예제" class="header-anchor">#</a> 단순 연결 리스트의 삭제 연산 예제</h4> <div class="language- extra-class"><pre class="language-text"><code># 첫 번째 노드를 삭제하는 알고리즘
+def deletetoFirst():  # 처음 노드 삭제
+    global Head
+    if Head == None:
+        print('error')
+    else:
+        Head = Head.link
+
+# 노드를 삭제하는 알고리즘
+def delete(pre):  # pre 다음 노드 삭제
+    if pre == None or pre.link == None:
+        print('error')
+    else:
+        pre.link = pre.link.link
+</code></pre></div><h3 id="이중-연결-리스트"><a href="#이중-연결-리스트" class="header-anchor">#</a> 이중 연결 리스트</h3> <ul><li>양쪽 방향으로 순회할 수 있도록 노드를 연결한 리스트</li> <li>두 개의 링크 필드와 한 개의 데이터 필드로 구성</li></ul> <h3 id="이중-연결-리스트의-삭제-연산1"><a href="#이중-연결-리스트의-삭제-연산1" class="header-anchor">#</a> 이중 연결 리스트의 삭제 연산1</h3> <p><code>cur이 가리키는 노드 다음에 D값을 가진 노드를 삽입하는 과정</code></p> <ol><li>메모리를 할당하여 새로운 노드 new를 생성하고 데이터 필드에 'D'를 저장</li> <li>cur의 next를 new의 next에 저장하여 cur의 다음 노드를 삽입할 노드의 다음 노드로 연결</li> <li>new의 값을 cur의 next에 저장하여 삽입할 노드를 cur의 다음 노드로 연결</li> <li>cur의 값을 new의 prev 필드에 저장하여 cur를 new의 이전 노드로 연결</li> <li>new의 값을 new가 가리키는 노드의 다음 노드의 prev 필드에 저장하여 삽입하려는 노드의 다음 노드와 삽입하려는 노드를 연결</li></ol> <h4 id="이중-연결-리스트의-삭제-연산2"><a href="#이중-연결-리스트의-삭제-연산2" class="header-anchor">#</a> 이중 연결 리스트의 삭제 연산2</h4> <p><code>cur이 가리키는 노드를 삭제하는 과정</code></p> <ol><li>현재 상태</li> <li>삭제할 노드의 다음 노드의 주소를 삭제할 노드의 이전 노드의 next 필드에 저장하여 링크를 연결</li> <li>삭제할 노드의 다음 노드의 prev 필드에 삭제할 노드의 이전 노드의 주소를 저장하여 링크를 연결</li> <li>cur이 가리키는 노드에 할당된 메모리를 반환</li></ol> <br> <h2 id="_2-삽입-정렬"><a href="#_2-삽입-정렬" class="header-anchor">#</a> 2. 삽입 정렬</h2> <h3 id="삽입-정렬의-특징"><a href="#삽입-정렬의-특징" class="header-anchor">#</a> 삽입 정렬의 특징</h3> <ul><li>도서관 사서가 책을 정렬할 때, 일반적으로 활용되는 방식</li> <li>자료 배열의 모든 원소들을 앞에서부터 차례대로 이미 정렬된 부분과 비교하여, 자신의 위치를 찾아냄으로써 정렬을 완성</li></ul> <h4 id="삽입-정렬의-정렬-과정-⇒-시간-복잡도-o-n-2"><a href="#삽입-정렬의-정렬-과정-⇒-시간-복잡도-o-n-2" class="header-anchor">#</a> 삽입 정렬의 정렬 과정 ⇒ <code>시간 복잡도 : O(n^2)</code></h4> <ul><li>정렬할 자료를 두 개의 부분집합 S와 U로 가정
+<ul><li>부분집합 S : 정렬된 앞 부분의 원소들</li> <li>부분집합 U : 아직 정렬되지 않은 나머지 원소들</li></ul></li> <li>정렬되지 않은 부분집합 U의 원소를 하나씩 꺼내서 이미 정렬되어 있는 부분집합 S의 마지막 원소부터 비교하면서 위치를 찾아 삽입</li> <li>삽입 정렬을 반복하면서 부분집합 S의 원소는 하나씩 늘리고 부분집합 U의 원소는 하나씩 감소하게 함</li> <li>부분집합 U가 공집합이 되면 삽입 정렬이 완성됨</li></ul> <br> <h2 id="_3-병합-정렬"><a href="#_3-병합-정렬" class="header-anchor">#</a> 3. 병합 정렬</h2> <h3 id="병합-정렬의-특징"><a href="#병합-정렬의-특징" class="header-anchor">#</a> 병합 정렬의 특징</h3> <p>여러 개의 정렬된 자료의 집합을 병합하여 한 개의 정렬된 집합으로 만드는 방식</p> <ol><li>분할 정복 알고리즘 활용
+<ul><li>자료를 최소 단위의 문제까지 나눈 후에 차례대로 정렬하여 최종 결과를 얻어냄</li></ul> <ul><li>Top-Down 방식</li></ul></li> <li>시간 복잡도: O(nlogn)</li></ol> <h3 id="병합-정렬의-과정"><a href="#병합-정렬의-과정" class="header-anchor">#</a> 병합 정렬의 과정</h3> <p><code>{69, 10, 30, 2, 16, 8, 31, 22}를 병합 정렬하는 과정</code></p> <ol><li>병합 단계: 2개의 부분집합을 정렬하면서 하나의 집합을 병합</li> <li>8개의 부분집합이 1개로 병합될 때까지 반복함</li></ol> <h3 id="병합-정렬-알고리즘"><a href="#병합-정렬-알고리즘" class="header-anchor">#</a> 병합 정렬 알고리즘</h3> <div class="language- extra-class"><pre class="language-text"><code># 분할 과정의 알고리즘
+
+def merge_sort(m):
+    if len(m) &lt;= 1:
+        return m
+
+    # 1. Divide 부분
+    mid = len(m)
+    left = m[:mid]
+    right = m[mid:]
+
+    # 리스트의 크기가 1이 될 때까지 merge_sort 재귀 호출
+    left = merge_sort(left)
+    right = merge_sort(right)
+
+    # 2. Conquer 부분 : 분할된 리스트들 병합
+    return merge(left, right)
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code># 병합 과정의 알고리즘
+
+def merge(left, right):
+    result = []  # 두 개의 분할된 리스트를 병합하여 result를 만듦
+
+    while len(left) &gt; 0 and len(right) &gt; 0: # 양쪽 리스트에 원소가 남아있는 경우
+        # 두 서브 리스트의 첫 원소들을 비교하여 작은 것부터 result에 추가함
+        if left[0] &lt;= right[0]:
+            result.append(left.pop(0))
+        else:
+            result.append(right.pop(0))
+
+    if len(left) &gt; 0:  # 왼쪽 리스트에 원소가 남아있는 경우
+        result.extend(left)
+    else len(right) &gt; 0:  # 오른쪽 리스트에 원소르 남아있는 경우
+        result.extend(right)
+
+    return result
+</code></pre></div><h3 id="삽입-정렬과-병합-정렬의-특성"><a href="#삽입-정렬과-병합-정렬의-특성" class="header-anchor">#</a> 삽입 정렬과 병합 정렬의 특성</h3> <table><thead><tr><th style="text-align:center;">알고리즘</th> <th style="text-align:center;">평균 수행 시간</th> <th style="text-align:center;">최악 수행 시간</th> <th style="text-align:center;">알고리즘 기법</th> <th style="text-align:center;">비고</th></tr></thead> <tbody><tr><td style="text-align:center;">삽입 정렬</td> <td style="text-align:center;">O(n^2)</td> <td style="text-align:center;">O(n^2)</td> <td style="text-align:center;">비교와 교환</td> <td style="text-align:center;">교환의 횟수가 버블, 삽입 정렬보다 작음</td></tr> <tr><td style="text-align:center;">병합 정렬</td> <td style="text-align:center;">O(nlogn)</td> <td style="text-align:center;">O(nlogn)</td> <td style="text-align:center;">분할 정복</td> <td style="text-align:center;">연결 List의 경우 가장 효율적인 방식</td></tr></tbody></table> <br> <h2 id="_4-linked-list의-활용"><a href="#_4-linked-list의-활용" class="header-anchor">#</a> 4. Linked List의 활용</h2> <h3 id="list를-이용한-stack"><a href="#list를-이용한-stack" class="header-anchor">#</a> List를 이용한 Stack</h3> <ul><li><p>스택의 원소: 리스트의 노드</p> <ul><li>스택 내의 순서는 리스트의 링크를 통해 연결됨</li> <li>Push: 리스트의 마지막에 노드 삽입</li> <li>Pop: 리스트의 마지막 노드 반환/삭제</li></ul></li> <li><p>변수 Top</p> <ul><li>리스트의 마지막 노드를 가리키는 변수</li> <li>초기 상태: Top = None</li></ul></li></ul> <h3 id="list를-이용한-stack의-연산"><a href="#list를-이용한-stack의-연산" class="header-anchor">#</a> List를 이용한 Stack의 연산</h3> <p><code>리스트를 이용해 Push와 Pop 연산 구현</code></p> <ol><li>None 값을 가지는 노드를 만들어 스택 초기화</li> <li>원소 A 삽입: push(A)</li> <li>원소 B 삽입: push(B)</li> <li>원소 C 삽입: push(C)</li> <li>원소 반환: Pop</li></ol> <h3 id="list를-이용한-stack의-구현"><a href="#list를-이용한-stack의-구현" class="header-anchor">#</a> List를 이용한 Stack의 구현</h3> <h4 id="push-pop-연산의-알고리즘-예제"><a href="#push-pop-연산의-알고리즘-예제" class="header-anchor">#</a> Push / Pop 연산의 알고리즘 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>def push(i):         # 원소 i를 스택 top(맨앞) 위치에 push
+    global top
+    top = Node(i, top) # 새로운 노드 생성
+
+def pop():           # 스택의 top을 pop
+    global top
+
+    if top == None:    # 빈 리스트면
+        print(&quot;error&quot;)
+    else:
+        data = top.data
+        top = top.link   # top이 가리키는 노드로 바꿈
+        return data
+</code></pre></div><h3 id="우선순위-queue"><a href="#우선순위-queue" class="header-anchor">#</a> 우선순위 Queue</h3> <ul><li>연결 리스트를 이용한 우선순위 Queue</li> <li>삽입: enQueue</li> <li>삭제: deQueue</li></ul> <h3 id="순차-리스트를-이용한-우선순위-queue-구현"><a href="#순차-리스트를-이용한-우선순위-queue-구현" class="header-anchor">#</a> 순차 리스트를 이용한 우선순위 Queue 구현</h3> <ul><li>순차 리스트를 이용하여 자료 저장</li> <li>원소를 삽입하는 과정에서 우선순위를 비교하여 적절한 위치에 삽입하는 구조</li> <li>가장 앞에 최고 우선순위의 원소가 위치하게 됨</li></ul> <h4 id="문제점"><a href="#문제점" class="header-anchor">#</a> 문제점</h4> <p>배열을 사용하므로 삽입이나 삭제 연산이 일어날 때 원소의 재배치가 발생함
+이에 소요되는 시간이나 메모리 낭비가 큼</p> <h3 id="연결-리스트를-이용한-우선순위-queue-구현"><a href="#연결-리스트를-이용한-우선순위-queue-구현" class="header-anchor">#</a> 연결 리스트를 이용한 우선순위 Queue 구현</h3> <ul><li>연결 리스트를 이용하여 자료 저장</li> <li>원소를 삽입하는 과정에서 리스트 내 노드의 원소들과 비교하여 적절한 위치에 노드를 삽입하는 구조</li> <li>리스트의 가장 앞쪽에 최고 우선순위가 위치하게 됨</li></ul> <h4 id="순차리스트-대비-장점"><a href="#순차리스트-대비-장점" class="header-anchor">#</a> 순차리스트 대비 장점</h4> <ul><li>삽입/삭제 연산 이후 원소의 재배치가 필요 없음</li> <li>메모리의 효율적인 사용이 가능함</li></ul> <br> <h2 id="reference-additional-resources"><a href="#reference-additional-resources" class="header-anchor">#</a> Reference &amp; Additional Resources</h2> <blockquote><p>SW Expert Academy</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/23/2020, 3:13:08 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/TIL/SWEA/6. Queue.html" class="prev">
+        Queue
+      </a></span> <span class="next"><a href="/TIL/SWEA/8. Tree.html">
+        Tree
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/TIL/assets/js/app.6651a9c9.js" defer></script><script src="/TIL/assets/js/2.73ccfab7.js" defer></script><script src="/TIL/assets/js/15.4147562d.js" defer></script><script src="/TIL/assets/js/4.58ecc0e6.js" defer></script>
+  </body>
+</html>
