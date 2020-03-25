@@ -7,7 +7,7 @@
 
       <div class="infoContainer">
         <div class="name">장소현(JangSohyeon)</div>
-        <ul>
+        <ul class="ul">
           <li>
             <a href="https://github.com/shjang1013">GitHub</a>
           </li>
@@ -37,7 +37,7 @@ h1 {
   font-weight: 900;
   font-size: 2rem;
 }
-ul {
+.ul {
   list-style: none;
   line-height: 1.5rem;
 }
