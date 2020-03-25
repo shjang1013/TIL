@@ -1,7 +1,7 @@
 const sidebar = require('./auto-sidebar-generator');
 
 module.exports = {
-  title: 'Today Sohyeon Learned',
+  title: 'Today Sohyeon Learned💡',
   description: 'Personal Wiki (Today I Learned)',
   email: 'shjang113@gmail.com',
   base: "/TIL/",
