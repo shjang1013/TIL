@@ -19,7 +19,6 @@ module.exports = {
   themeConfig: {
     sidebar: [
       sidebar.getSidebarGroup('/goals/', '🎯 목표', true),
-      sidebar.getSidebarGroup('/Interview/', '🎁 면접준비', true),
       sidebar.getSidebarGroup('/SpringBoot/', '🐶 Spring Boot', true),
       sidebar.getSidebarGroup('/Python/','🐻 Python', true),
       sidebar.getSidebarGroup('/SWEA/', '🐱 SWEA', true)
