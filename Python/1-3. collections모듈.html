@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>collections 모듈 | Today Sohyeon Learned💡</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/TIL/images/logo-144.png">
+    <link rel="manifest" href="/TIL/manifest.json">
+    <meta name="description" content="Personal Wiki (Today I Learned)">
+    <link rel="preload" href="/TIL/assets/css/0.styles.59ade7d7.css" as="style"><link rel="preload" href="/TIL/assets/js/app.4c874225.js" as="script"><link rel="preload" href="/TIL/assets/js/2.69b13d75.js" as="script"><link rel="preload" href="/TIL/assets/js/12.9160c4b0.js" as="script"><link rel="preload" href="/TIL/assets/js/4.2e573045.js" as="script"><link rel="prefetch" href="/TIL/assets/js/10.ab729d16.js"><link rel="prefetch" href="/TIL/assets/js/11.df297a16.js"><link rel="prefetch" href="/TIL/assets/js/13.6ee4e6f0.js"><link rel="prefetch" href="/TIL/assets/js/14.3a0b48f3.js"><link rel="prefetch" href="/TIL/assets/js/15.127c0374.js"><link rel="prefetch" href="/TIL/assets/js/16.b33d94f6.js"><link rel="prefetch" href="/TIL/assets/js/17.63299878.js"><link rel="prefetch" href="/TIL/assets/js/18.68d23ed4.js"><link rel="prefetch" href="/TIL/assets/js/19.70911294.js"><link rel="prefetch" href="/TIL/assets/js/20.9308f568.js"><link rel="prefetch" href="/TIL/assets/js/21.5ad587c9.js"><link rel="prefetch" href="/TIL/assets/js/22.f88c024e.js"><link rel="prefetch" href="/TIL/assets/js/23.e1bffded.js"><link rel="prefetch" href="/TIL/assets/js/24.c2f3404b.js"><link rel="prefetch" href="/TIL/assets/js/25.493957c4.js"><link rel="prefetch" href="/TIL/assets/js/3.75e4c1b9.js"><link rel="prefetch" href="/TIL/assets/js/5.4b579782.js"><link rel="prefetch" href="/TIL/assets/js/6.be647db9.js"><link rel="prefetch" href="/TIL/assets/js/7.a44147e8.js"><link rel="prefetch" href="/TIL/assets/js/8.67beaea2.js"><link rel="prefetch" href="/TIL/assets/js/9.027c76b9.js">
+    <link rel="stylesheet" href="/TIL/assets/css/0.styles.59ade7d7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/TIL/" class="home-link router-link-active"><!----> <span class="site-name">Today Sohyeon Learned💡</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/shjang1013/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/shjang1013/TIL" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🎯 목표</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🐶 Spring Boot</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>🐻 Python</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/TIL/Python/1-1. 연산자.html" class="sidebar-link">연산자</a></li><li><a href="/TIL/Python/1-2. itertools 모듈.html" class="sidebar-link">itertools 모듈</a></li><li><a href="/TIL/Python/1-3. collections모듈.html" class="active sidebar-link">collections 모듈</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/TIL/Python/1-3. collections모듈.html#collections-모듈-2" class="sidebar-link">collections 모듈</a></li><li class="sidebar-sub-header"><a href="/TIL/Python/1-3. collections모듈.html#deque-모듈" class="sidebar-link">deque 모듈</a></li><li class="sidebar-sub-header"><a href="/TIL/Python/1-3. collections모듈.html#ordereddict-모듈" class="sidebar-link">OrderedDict 모듈</a></li><li class="sidebar-sub-header"><a href="/TIL/Python/1-3. collections모듈.html#defaultdict-모듈" class="sidebar-link">defaultDict 모듈</a></li><li class="sidebar-sub-header"><a href="/TIL/Python/1-3. collections모듈.html#counter-모듈" class="sidebar-link">Counter 모듈</a></li><li class="sidebar-sub-header"><a href="/TIL/Python/1-3. collections모듈.html#namedtuple-모듈" class="sidebar-link">namedtuple 모듈</a></li><li class="sidebar-sub-header"><a href="/TIL/Python/1-3. collections모듈.html#reference-additional-resources" class="sidebar-link">Reference &amp; Additional Resources</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🐱 SWEA</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="collections-모듈"><a href="#collections-모듈" class="header-anchor">#</a> collections 모듈</h1> <br> <h2 id="collections-모듈-2"><a href="#collections-모듈-2" class="header-anchor">#</a> collections 모듈</h2> <p><code>collections 모듈</code>은 리스트, 튜플, 딕셔너리 등을 확장하여 제작된 파이썬의 내장 모듈이며, <code>deque, OrderedDict, defaultDict, Counter, namedtuple</code> 등을 제공한다.</p> <br> <h2 id="deque-모듈"><a href="#deque-모듈" class="header-anchor">#</a> deque 모듈</h2> <ul><li><code>deque 모듈</code>은 <code>double-ended queue</code>의 줄임말로 스택과 큐를 지원하며, 양방향에서 데이터를 삽입 및 추출할 수 있는 모듈이다.</li> <li>deque는 빠른 고정 길이 작업에 최적화되어 있다.</li></ul> <h3 id="append"><a href="#append" class="header-anchor">#</a> append()</h3> <p><code>append()</code>는 deque의 끝(오른쪽)에 값을 추가한다.</p> <h4 id="append-예제"><a href="#append-예제" class="header-anchor">#</a> append() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq1 = deque([1, 2, 3])
+deq1.append(4)
+
+print(deq1)
+</code></pre></div><p>결과 : <code>deque([1, 2, 3, 4])</code></p> <h3 id="appendleft"><a href="#appendleft" class="header-anchor">#</a> appendleft()</h3> <p><code>appendleft()</code>는 deque의 앞(왼쪽)에 값을 추가한다.</p> <h4 id="appendleft-예제"><a href="#appendleft-예제" class="header-anchor">#</a> appendleft() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq2 = deque([1, 2, 3])
+deq2.appendleft(0)
+
+print(deq2)
+</code></pre></div><p>결과 : <code>deque([0, 1, 2, 3])</code></p> <h3 id="pop"><a href="#pop" class="header-anchor">#</a> pop()</h3> <p><code>pop()</code>은 deque의 오른쪽에서 데이터 하나를 가져와 반환한다. deque에서 그 값은 삭제되며, 가져올 요소가 없다면 IndexError를 일으킨다.</p> <h4 id="pop-예제"><a href="#pop-예제" class="header-anchor">#</a> pop() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq3 = deque([1, 2, 3])
+deq3_last = deq3.pop()
+
+print(deq3_last)
+print(deq3)
+</code></pre></div><p>결과 :</p> <div class="language- extra-class"><pre class="language-text"><code>3
+deque([1, 2])
+</code></pre></div><h3 id="popleft"><a href="#popleft" class="header-anchor">#</a> popleft()</h3> <p><code>popleft()</code>은 deque의 왼쪽에서 데이터 하나를 가져와 반환한다. deque에서 그 값은 삭제되며, 가져올 요소가 없다면 IndexError를 일으킨다.</p> <h4 id="pop-예제-2"><a href="#pop-예제-2" class="header-anchor">#</a> pop() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq4 = deque([1, 2, 3])
+deq4_first = deq4.popleft()
+
+print(deq4_first)
+print(deq4)
+</code></pre></div><p>결과 :</p> <div class="language- extra-class"><pre class="language-text"><code>1
+deque([2, 3])
+</code></pre></div><h3 id="deque-maxlen-n"><a href="#deque-maxlen-n" class="header-anchor">#</a> deque(maxlen=n)</h3> <p><code>maxlen=n</code>은 deque의 최대 길이를 n으로 제한한다. deque 객체의 길이가 n으로 제한되어서, 오른쪽으로 값이 추가되면 왼쪽에서부터 값이 삭제된다.</p> <h4 id="deque-maxlen-n-예제"><a href="#deque-maxlen-n-예제" class="header-anchor">#</a> deque(maxlen=n) 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq5 = deque(maxlen=3)
+
+for i in range(5):
+    deq5.append(i)
+    print(deq5)
+</code></pre></div><p>결과 :</p> <div class="language- extra-class"><pre class="language-text"><code>deque([0], maxlen=3)
+deque([0, 1], maxlen=3)
+deque([0, 1, 2], maxlen=3)
+deque([1, 2, 3], maxlen=3)
+deque([2, 3, 4], maxlen=3)
+</code></pre></div><h3 id="reverse"><a href="#reverse" class="header-anchor">#</a> reverse()</h3> <p><code>reverse()</code>는 deque의 순서를 뒤집는다.</p> <h4 id="reverse-예제"><a href="#reverse-예제" class="header-anchor">#</a> reverse() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq6 = deque([1, 2, 3])
+deq6.reverse()
+
+print(deq6)
+</code></pre></div><p>결과 : <code>deque([3, 2, 1])</code></p> <h3 id="count"><a href="#count" class="header-anchor">#</a> count()</h3> <p><code>count(x)</code>는 deque에 포함된 x의 개수를 반환한다.</p> <h4 id="count-예제"><a href="#count-예제" class="header-anchor">#</a> count() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq7 = deque([1, 3, 2, 4, 2, 3, 1])
+count_2 = deq7.count(2)
+
+print(count_2)
+</code></pre></div><p>결과 : <code>2</code></p> <h3 id="rotate"><a href="#rotate" class="header-anchor">#</a> rotate()</h3> <p>rotate()는 입력한 수만큼 deque의 값들을 (오른쪽으로) 이동하고, 입력한 값이 음수라면 왼쪽으로 이동한다.</p> <ul><li>rotate(n=1)은 <code>appendleft(d.pop())</code>와 동일하고, rotate(n=-1)은 <code>append(d.popleft())</code>와 동일하다.</li></ul> <h4 id="rotate-예제"><a href="#rotate-예제" class="header-anchor">#</a> rotate() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq8 = deque([1, 2, 3])
+deq8.rotate(1)      # Shift to the right
+
+print(deq8)
+
+deq8.rotate(-2)     # Shift to the left
+
+print(deq8)
+</code></pre></div><p>결과 :</p> <div class="language- extra-class"><pre class="language-text"><code>deque([3, 1, 2])
+deque([2, 3, 1])
+</code></pre></div><h3 id="clear"><a href="#clear" class="header-anchor">#</a> clear()</h3> <p><code>clear()</code>는 deque의 값들을 모두 삭제하며, deque의 길이는 0이 된다.</p> <h4 id="clear-예제"><a href="#clear-예제" class="header-anchor">#</a> clear() 예제</h4> <div class="language- extra-class"><pre class="language-text"><code>from collections import deque
+
+deq9 = deque([1, 2, 3])
+deq9.clear()
+
+print(deq9)
+</code></pre></div><p>결과 : <code>deque([])</code></p> <br> <h2 id="ordereddict-모듈"><a href="#ordereddict-모듈" class="header-anchor">#</a> OrderedDict 모듈</h2> <br> <h2 id="defaultdict-모듈"><a href="#defaultdict-모듈" class="header-anchor">#</a> defaultDict 모듈</h2> <br> <h2 id="counter-모듈"><a href="#counter-모듈" class="header-anchor">#</a> Counter 모듈</h2> <br> <h2 id="namedtuple-모듈"><a href="#namedtuple-모듈" class="header-anchor">#</a> namedtuple 모듈</h2> <br> <h2 id="reference-additional-resources"><a href="#reference-additional-resources" class="header-anchor">#</a> Reference &amp; Additional Resources</h2> <ul><li><a href="http://codetorial.net/python/collections_deque.html" target="_blank" rel="noopener noreferrer">Python collections.deque<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/16/2020, 2:47:06 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/TIL/Python/1-2. itertools 모듈.html" class="prev">
+        itertools 모듈
+      </a></span> <span class="next"><a href="/TIL/SWEA/1-1. List1.html">
+        List1
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/TIL/assets/js/app.4c874225.js" defer></script><script src="/TIL/assets/js/2.69b13d75.js" defer></script><script src="/TIL/assets/js/12.9160c4b0.js" defer></script><script src="/TIL/assets/js/4.2e573045.js" defer></script>
+  </body>
+</html>
