@@ -21,7 +21,6 @@ module.exports = {
       sidebar.getSidebarGroup('/goals/', '🎯 목표', true),
       sidebar.getSidebarGroup('/Spring/', '🐶 Spring', true),
       sidebar.getSidebarGroup('/Python/','🐻 Python', true),
-      sidebar.getSidebarGroup('/Interview/', '🐯 Interview', true),
       sidebar.getSidebarGroup('/SWEA/', '🐱 SWEA', true),
       sidebar.getSidebarGroup('/Programmers', '🐤 프로그래머스', true)
     ],
